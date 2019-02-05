@@ -1,3 +1,35 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Blockchain at UCSB"
+theme = "kube"
+description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "Blockchain at UCSB" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "myemail@myaddress.xxx"
+  favicon = "img/blockchain-at-ucsb.png"
+
+[[menu.main]]
+    name = "HOME"
+    weight = -100
+    url = "/"
+[[menu.main]]
+    name = "ABOUT US"
+    weight = -100
+    url = "/about-us/"
+[[menu.main]]
+    name = "MEET THE TEAM"
+    weight = -100
+    url = "/meet-the-team/"
+[[menu.main]]
+    name = "EVENTS"
+    weight = -100
+    url = "/events/"
+[[menu.main]]
+    name = "CONTACT US"
+    weight = -100
+    url = "/contact-us/"
+                      
