@@ -107,3 +107,13 @@ div.anchor{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
+.lSAction>a {
+    /*background: no-repeat;*/
+    background-size: contain; 
+    opacity: .7;
+}
+.lSAction>.lSPrev {
+    right: 10px;
+    transform: scale(-1, 1);
+}
+

@@ -1,27 +1,13 @@
-  <footer id="footer">
+<footer id="footer">
     <nav>
-      <ul>
-          <li><span>{{ .Site.Title }}</span></li>
-        <li>
-          <a href="/company/">HOME</a>
-        </li>
-        <li>
-          <a href="/blog/">ABOUT US</a>
-        </li>
-          <li>
-          <a href="/docs/">EVENTS</a>
-        </li>
-          <li>
-          <a href="/docs/">MEET THE TEAM</a>
-        </li>
-          <li>
-          <a href="/docs/">CONTACT</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/{{.Site.Params.twitter}}">Give a shout-out on Twitter!</a>
-        </li>
-      </ul>
+        <ul>
+            <li><span>{{ .Site.Title }}</span></li>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{end}}
+        </ul>
     </nav>
     <p>Copyright &copy; {{ .Site.Title }} {{ now.Format "2006" }}</p>
-  </footer>
+</footer>
+
 
