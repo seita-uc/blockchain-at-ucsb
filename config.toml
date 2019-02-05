@@ -17,22 +17,26 @@ Paginate = 4
 
 [[menu.main]]
     name = "HOME"
-    weight = -110
+    weight = -120
     url = "/"
+[[menu.main]]
+    name = "WHAT WE DO"
+    weight = -110
+    url = "/#what-we-do"
 [[menu.main]]
     name = "ABOUT US"
     weight = -100
-    url = "/about-us/"
+    url = "/#about-us"
 [[menu.main]]
     name = "MEET THE TEAM"
     weight = -100
-    url = "/meet-the-team/"
+    url = "/#meet-the-team"
 [[menu.main]]
     name = "EVENTS"
     weight = -100
-    url = "/events/"
+    url = "/#events"
 [[menu.main]]
     name = "CONTACT US"
     weight = -90
-    url = "/contact-us/"
+    url = "/#contact-us"
                       
