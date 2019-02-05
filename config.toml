@@ -2,8 +2,8 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Blockchain at UCSB"
 theme = "kube"
-description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
 Paginate = 4
+
 [Params]
   RSSLink = "/index.xml"
   author = "Blockchain at UCSB" # add your company name
@@ -11,10 +11,13 @@ Paginate = 4
   twitter = "" # add your twitter profile
   email = "myemail@myaddress.xxx"
   favicon = "img/blockchain-at-ucsb.png"
+  banner = "img/blockchain-at-ucsb-banner.png"
+  description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
+
 
 [[menu.main]]
     name = "HOME"
-    weight = -100
+    weight = -110
     url = "/"
 [[menu.main]]
     name = "ABOUT US"
@@ -30,6 +33,6 @@ Paginate = 4
     url = "/events/"
 [[menu.main]]
     name = "CONTACT US"
-    weight = -100
+    weight = -90
     url = "/contact-us/"
                       

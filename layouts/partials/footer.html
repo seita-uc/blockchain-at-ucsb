@@ -1,20 +1,28 @@
   <footer id="footer">
     <nav>
       <ul>
-        <li><span>Kube</span></li>
+          <li><span>{{ .Site.Title }}</span></li>
         <li>
-          <a href="/company/">Company</a>
+          <a href="/company/">HOME</a>
         </li>
         <li>
-          <a href="/blog/">Blog</a>
+          <a href="/blog/">ABOUT US</a>
         </li>
           <li>
-          <a href="/docs/">Docs</a>
+          <a href="/docs/">EVENTS</a>
+        </li>
+          <li>
+          <a href="/docs/">MEET THE TEAM</a>
+        </li>
+          <li>
+          <a href="/docs/">CONTACT</a>
         </li>
         <li>
           <a href="https://twitter.com/{{.Site.Params.twitter}}">Give a shout-out on Twitter!</a>
         </li>
       </ul>
     </nav>
-    <p>&copy; Licence MIT.</p>
+    <p>Copyright &copy; {{ .Site.Title }} {{ .Date.Format ", 2006" }}
+</p>
   </footer>
+
