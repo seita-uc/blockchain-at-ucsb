@@ -6,9 +6,6 @@ h1, h2 {
     padding: 20px;
     padding-left: 20px;
 }
-.header-section {
-    margin-top: 104px;
-}
 #what-we-do {
     margin-bottom: 60px;
     text-align: left;
@@ -24,7 +21,8 @@ h1, h2 {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
 }
 #about-us {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
+    margin-top: 80px;
     text-align: left;
 }
 #about-us h2 {
@@ -34,10 +32,17 @@ h1, h2 {
     padding: 0 20px;
     padding-top: 10px;
 }
+#meet-the-team {
+    margin-top: 80px;
+}
 #meet-the-team figure,
 #meet-the-team h4,
+#meet-the-team h3,
 #meet-the-team p {
     text-align: center;
+}
+#meet-the-team h2 {
+    color: #3d70b2;
 }
 #meet-the-team h2 {
     color: #3d70b2;
@@ -49,6 +54,28 @@ h1, h2 {
 }
 #meet-the-team .row {
     margin-top: 50px;
+    margin-bottom: 100px;
+}
+#meet-the-team .last {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+#meet-the-team .corporate-partner {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#meet-the-team .item {
+    padding-top: 20px;
+    background-color: #E0E0E0;
+}
+#events {
+        margin-top: 80px;
+}
+#events h2 {
+    color: #3d70b2;
+}
+#contacts {
+    margin-top: 80px;
 }
 
 div.anchor{
@@ -64,7 +91,6 @@ div.anchor{
     div#hero {
         /*background-color: rgba(255, 255, 255, 0.6);*/
         height: 30em;
-
     }
 }
 @media (max-width: 768px) {

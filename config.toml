@@ -33,10 +33,10 @@ Paginate = 4
     url = "/#meet-the-team"
 [[menu.main]]
     name = "EVENTS"
-    weight = -100
+    weight = -90
     url = "/#events"
 [[menu.main]]
     name = "CONTACT US"
-    weight = -90
+    weight = -80
     url = "/#contact-us"
                       
