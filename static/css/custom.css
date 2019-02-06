@@ -147,6 +147,9 @@ div.anchor{
         width: 100%;
         background-color: rgba(255, 255, 255, 0.8);
     }
+    #top #top-nav-main {
+        width: 90%;
+    }
 }
 @media (max-width: 768px) {
     div#hero {
@@ -160,18 +163,17 @@ div.anchor{
         z-index: 1;
     }
     #top{
-        position: fixed;
+        position: absolute;
         z-index: 1;
         width: inherit;
         max-width: inherit;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-bottom: 0px;
     }
     #top-nav-wrapper {
         width: 100%;
     }
     #top #top-nav-main {
-         /*display: block; */
-        /*justify-content: left; */
         width: 100%;
         margin-left: 0px;
     }
