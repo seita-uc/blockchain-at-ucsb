@@ -36,9 +36,6 @@ h1, h2 {
     margin-top: 30px;
     padding: 0 20px;
 } 
-#what-we-do-section .first {
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
-}
 #about-us {
     /*margin-bottom: 60px;*/
     margin-top: 50px;
@@ -72,14 +69,6 @@ h1, h2 {
     text-align: center;
     color: #5596e6;
 }
-#meet-the-team .row {
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-#meet-the-team .last {
-    margin-top: 80px;
-    margin-bottom: 0px;
-}
 #meet-the-team .corporate-partners {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -95,12 +84,6 @@ h1, h2 {
     box-shadow: 0 7px 7px -6px rgba(0, 0, 0, .05);
     margin: 0px 11px;
     /*box-shadow: 0px 15px 30px rgba(0, 0, 0, 1);*/
-}
-.advisors {
-    margin-top: 30px;
-}
-#events {
-    margin-top: 60px;
 }
 #events h2 {
     color: #3d70b2;
@@ -123,14 +106,9 @@ h1, h2 {
 #contact-us button {
     background-color: #3d70b2;
 }
-div.anchor{
-    display: block;
-    padding-top: 100px;
-    margin-top: -100px;
-}
 .is-big {
     font-size: 18px;
-    line-height: 29px;
+    line-height: 31px;
 }
 @media (min-width: 769px) {
     div#background-logo {
@@ -149,6 +127,27 @@ div.anchor{
     }
     #top #top-nav-main {
         width: 90%;
+    }
+    #what-we-do-section .first {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    }
+    #about-us .first {
+        border-right: 1px dashed rgba(0, 0, 0, 0.15);
+    }
+    #meet-the-team .row {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .advisors {
+        margin-top: 30px;
+    }
+    #events {
+        margin-top: 60px;
+    }
+    div.anchor{
+        display: block;
+        padding-top: 100px;
+        margin-top: -100px;
     }
 }
 @media (max-width: 768px) {
@@ -176,6 +175,27 @@ div.anchor{
     #top #top-nav-main {
         width: 100%;
         margin-left: 0px;
+    }
+    #what-we-do-section .second {
+        margin-top: 0px
+    }
+    #about-us .second {
+        margin-top: 0px
+    }
+    #meet-the-team .row {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .advisors {
+        margin-top: 10px;
+    }
+    #events {
+        margin-top: 90px;
+    }
+    div.anchor{
+        display: block;
+        padding-top: 30px;
+        margin-top: -30px;
     }
 }
 .slick-prev {
