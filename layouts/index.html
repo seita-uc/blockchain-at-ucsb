@@ -23,34 +23,9 @@
         <h2>MEET THE TEAM</h2>
         <h2 class="team-header">EXECUTIVE TEAM</h2>
         <div class="row gutters">
-            <div class="col col-3 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Ruben Dermoyan</h4>
-                <p>President</p>
-            </div>
-            <div class="col col-3 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Mia Winther-Tamaki</h4>
-                <p>Vice President</p>
-            </div>
-            <div class="col col-3 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Cameron Dennis</h4>
-                <p>Head of External</p>
-            </div>
-            <div class="col col-3 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Cameron Dennis</h4>
-                <p>Head of External</p>
-            </div>
+            {{ range .Site.Params.Executives }}
+            {{ partial  "exexutive-member-card" . }}
+            {{end}}
         </div>
 
         <h2 class="team-header advisors">ADVISORS</h2>
@@ -77,7 +52,7 @@
             </div>
         </div>
 
-        <h3>Corporate Partners</h3>
+        <h3 class="corporate-partners">Corporate Partners</h3>
         <div class="slick corporate-partners">
             <div class="col col-4 item">
                 <!--<figure>-->

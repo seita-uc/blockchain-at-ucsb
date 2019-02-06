@@ -4,15 +4,81 @@ title = "Blockchain at UCSB"
 theme = "kube"
 Paginate = 4
 
-[Params]
-  RSSLink = "/index.xml"
-  author = "Blockchain at UCSB" # add your company name
-  github = "" # add your github profile name
-  twitter = "" # add your twitter profile
-  email = "myemail@myaddress.xxx"
-  favicon = "img/blockchain-at-ucsb.png"
-  banner = "img/blockchain-at-ucsb-banner.png"
-  description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
+[params]
+    RSSLink = "/index.xml"
+    author = "Blockchain at UCSB" # add your company name
+    github = "" # add your github profile name
+    twitter = "" # add your twitter profile
+    email = "myemail@myaddress.xxx"
+    favicon = "img/blockchain-at-ucsb.png"
+    banner = "img/blockchain-at-ucsb-banner.png"
+    description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
+
+[[params.executives]]
+    name = "Ruben Dermoyan"
+    position = "President"
+    image = "/img/ruben-dermoyan.jpeg"
+    snsLink = "https://www.linkedin.com/in/ruben-dermoyan-936aa1166/"
+
+[[params.executives]]
+    name = "Mia Winther-Tamaki"
+    position = "Vice President"
+    image = "/img/mia-winther-tamaki.jpeg"
+    snsLink = "https://www.linkedin.com/in/mia-winther-tamaki-404437170/"
+
+[[params.executives]]
+    name = "Cameron Dennis"
+    position = "Head of External"
+    image = "/img/cameron-dennis.jpeg"
+    snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+
+
+# [[params.executives]]
+#     name = "Cameron Dennis"
+#     position = "Marketing Officer"
+#     image = "/#contact-us"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Cameron Dennis"
+#     position = "Technology Officer"
+#     image = "/#contact-us"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Cameron Dennis"
+#     position = "Outreach Officer"
+#     image = "/#contact-us"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Cameron Dennis"
+#     position = "Operations Officer"
+#     image = "/#contact-us"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Cameron Dennis"
+#     position = "Community Manager"
+#     image = "/#contact-us"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# 
+# [[params.executives]]
+#     name = "Ishani Gupta"
+#     position = ""
+#     image = "https://vignette.wikia.nocookie.net/marsargo/images/5/52/Unknown.jpg/revision/latest?cb=20170904102656"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Thomas Casey"
+#     position = ""
+#     image = "https://vignette.wikia.nocookie.net/marsargo/images/5/52/Unknown.jpg/revision/latest?cb=20170904102656"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Thomas Crimmel"
+#     position = ""
+#     image = "https://vignette.wikia.nocookie.net/marsargo/images/5/52/Unknown.jpg/revision/latest?cb=20170904102656"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+# [[params.executives]]
+#     name = "Julian Wagner"
+#     position = ""
+#     image = "https://vignette.wikia.nocookie.net/marsargo/images/5/52/Unknown.jpg/revision/latest?cb=20170904102656"
+#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
 
 
 [[menu.main]]
@@ -39,4 +105,5 @@ Paginate = 4
     name = "CONTACT US"
     weight = -80
     url = "/#contact-us"
+
                       
