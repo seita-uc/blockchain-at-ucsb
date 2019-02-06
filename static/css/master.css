@@ -99,9 +99,9 @@ text-decoration: none; }
 }
 #top #top-nav-main {
     display: flex;
-    width: 90%;
+    /*width: 90%;*/
     justify-content: flex-end;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     /*border-left: 1px solid rgba(0, 0, 0, 0.15);*/
 }
 #top #top-nav-main li {

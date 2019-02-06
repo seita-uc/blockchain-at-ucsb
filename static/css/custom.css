@@ -1,3 +1,6 @@
+main {
+    overflow: hidden;
+}
 h1, h2 {
     font-family: Archivo, Lato, sans-serif !important;
 }
@@ -157,8 +160,20 @@ div.anchor{
         z-index: 1;
     }
     #top{
-        position: relative;
+        position: fixed;
         z-index: 1;
+        width: inherit;
+        max-width: inherit;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    #top-nav-wrapper {
+        width: 100%;
+    }
+    #top #top-nav-main {
+         /*display: block; */
+        /*justify-content: left; */
+        width: 100%;
+        margin-left: 0px;
     }
 }
 .slick-prev {
@@ -177,6 +192,7 @@ div.anchor{
     overflow: visible; 
     margin: 0;
     padding: 0;
+    max-width: 1128px;
 }
 input:focus,
 select:focus,
