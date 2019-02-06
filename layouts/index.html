@@ -3,7 +3,7 @@
 {{ define "main"}}
 
 <div id="main">
-    <div class="rellax" data-rellax-speed="-5" data-rellax-zindex="0" id="background-logo" style="background: rgba(255,255,255,1) url('{{ .Site.Params.banner | absURL }}') no-repeat center center; background-size: contain;">
+    <div class="rellax" data-rellax-speed="-6" data-rellax-zindex="0" id="background-logo" style="background: rgba(255,255,255,1) url('{{ .Site.Params.banner | absURL }}') no-repeat center center; background-size: contain;">
         <div id="hero">
             <!--<h1>{{ .Title }}</h1>-->
             <!--<p>{{ .Site.Params.Description }}</p>-->
@@ -51,31 +51,30 @@
 
     <div id="meet-the-team" class="header-section anchor">
         <h2>MEET THE TEAM</h2>
-        <h2 class="team-section">EXECUTIVE TEAM</h2>
-        <!--<div class="row gutters">-->
-        <div id="light-slider">
-            <div class="col col-4 item">
+        <h2 class="team-header">EXECUTIVE TEAM</h2>
+        <div class="row gutters">
+            <div class="col col-3 item">
                 <figure>
                     <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
                 </figure>
                 <h4>Ruben Dermoyan</h4>
                 <p>President</p>
             </div>
-            <div class="col col-4 item">
+            <div class="col col-3 item">
                 <figure>
                     <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
                 </figure>
                 <h4>Mia Winther-Tamaki</h4>
                 <p>Vice President</p>
             </div>
-            <div class="col col-4 item">
+            <div class="col col-3 item">
                 <figure>
                     <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
                 </figure>
                 <h4>Cameron Dennis</h4>
                 <p>Head of External</p>
             </div>
-            <div class="col col-4 item">
+            <div class="col col-3 item">
                 <figure>
                     <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
                 </figure>
@@ -84,8 +83,9 @@
             </div>
         </div>
 
-        <h2 class="team-section">ADVISORS</h2>
+        <h2 class="team-header advisors">ADVISORS</h2>
         <h3>University Partners</h3>
+        <!--<div id="light-slider">-->
         <div class="row gutters">
             <div class="col col-4 item">
                 <figure>
@@ -108,90 +108,82 @@
         </div>
 
         <h3>Corporate Partners</h3>
-        <div class="row gutters corporate-partner">
+        <div class="slick corporate-partners">
             <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
+                <!--<figure>-->
+                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
+                <!--</figure>-->
                 <h4>Mousebelt</h4>
             </div>
             <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
+                <!--<figure>-->
+                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
+                <!--</figure>-->
                 <h4>BAF</h4>
             </div>
             <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
+                <!--<figure>-->
+                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
+                <!--</figure>-->
                 <h4>Uphold</h4>
             </div>
-        </div>
-
-        <div class="row gutters last">
             <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
+                <!--<figure>-->
+                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
+                <!--</figure>-->
                 <h4>Consensys</h4>
             </div>
         </div>
-    </div>
+        </div>
 
-    <div id="events" class="header-section anchor">
-        <h2 class="">EVENTS</h2>
-        <div class="col col-12 item">
-            <h3>Innovation Summit</h3>
-            <p>BCUCSB collaborated with UCSB Innovation Council and other campus organizations to put together a one-day campus event (November 17, 2018) designed to foster and harness creative thinking and develop a innovative business model to improve problems found in global categories such as energy, sustainability, income inequality, digital security, and health. 
-At the event, BCUCSB members explained real-world blockchain applications and also encouraged students to explore incorporating blockchain models in their creative business ideas. On a speaker panel of industry leaders, we interviewed Robert Greenfield, the Technical Director at Consensys, which is the leading firm within the Blockchain and Cryptocurrency markets. 
-            </p>
+        <div id="events" class="header-section anchor">
+            <h2 class="">EVENTS</h2>
+            <div class="col col-12 item">
+                <h3>Innovation Summit</h3>
+                <p>BCUCSB collaborated with UCSB Innovation Council and other campus organizations to put together a one-day campus event (November 17, 2018) designed to foster and harness creative thinking and develop a innovative business model to improve problems found in global categories such as energy, sustainability, income inequality, digital security, and health. 
+                At the event, BCUCSB members explained real-world blockchain applications and also encouraged students to explore incorporating blockchain models in their creative business ideas. On a speaker panel of industry leaders, we interviewed Robert Greenfield, the Technical Director at Consensys, which is the leading firm within the Blockchain and Cryptocurrency markets. 
+                </p>
+            </div>
+            <div class="col col-12 item">
+                <h3>SB Hacks — January 11-13, 2019</h3>
+                <p>BCUCSB partnered with SB Hacks to help coordinate UCSB’s annual hackathons where students spend 36 hours designing an innovative project. 
+                At the event, BCUCSB members explained real-world blockchain applications and also encouraged students to explore incorporating blockchain models in their creative business ideas. On a speaker panel of industry leaders, we interviewed Robert Greenfield, the Technical Director at Consensys, which is the leading firm within the Blockchain and Cryptocurrency markets.</p>
+            </div>
+            <div class="col col-12 item">
+                <h3>Startup Weekend — January 18-21, 2019</h3>
+                <p>BCUCSB helped sponsor Startup Weekend to encourage blockchain adoption in startup ideas.</p>
+            </div>
         </div>
-        <div class="col col-12 item">
-            <h3>SB Hacks — January 11-13, 2019</h3>
-            <p>BCUCSB partnered with SB Hacks to help coordinate UCSB’s annual hackathons where students spend 36 hours designing an innovative project. 
-At the event, BCUCSB members explained real-world blockchain applications and also encouraged students to explore incorporating blockchain models in their creative business ideas. On a speaker panel of industry leaders, we interviewed Robert Greenfield, the Technical Director at Consensys, which is the leading firm within the Blockchain and Cryptocurrency markets.</p>
-        </div>
-        <div class="col col-12 item">
-            <h3>Startup Weekend — January 18-21, 2019</h3>
-            <p>BCUCSB helped sponsor Startup Weekend to encourage blockchain adoption in startup ideas.</p>
-        </div>
-    </div>
 
         <div id="contact-us" class="header-section anchor">
-        <h2 class="">CONTACT US</h2>
-        <form method="post" action="">
+            <h2 class="">CONTACT US</h2>
+            <form method="post" action="">
 
-            <div class="form-item">
-                <label>Name</label>
-                <input type="text" name="name" class="w50">
-            </div>
+                <div class="form-item">
+                    <label>Name</label>
+                    <input type="text" name="name" class="w50">
+                </div>
+                <div class="form-item">
+                    <label>Your Email Address</label>
+                    <input type="text" name="name" class="w50">
+                </div>
+                <div class="form-item">
+                    <label>Subject</label>
+                    <input type="text" name="name" class="w50">
+                </div>
+                <div class="form-item">
+                    <label>Message</label>
+                    <textarea rows="6"></textarea>
+                </div>
 
-            <div class="form-item">
-                <label>Country</label>
-                <select>
-                    <option value="">---</option>
-                </select>
-            </div>
+                <div class="form-item is-buttons">
+                    <button class="button">Submit</button>
+                </div>
+            </form>
+        </div>
 
-            <div class="form-item">
-                <label class="is-checkbox"><input type="checkbox"> Check me</label>
-                <label class="is-checkbox"><input type="radio"> Radio me</label>
-            </div>
-
-            <div class="form-item">
-                <textarea rows="6"></textarea>
-            </div>
-
-            <div class="form-item is-buttons">
-                <button class="button">Submit</button>
-                <button class="button is-tertiary">Cancel</button>
-            </div>
-        </form>
     </div>
-
-</div>
-{{ end }}
-{{ define "footer"}} {{ partial "footer" .}} {{end}}
+    {{ end }}
+    {{ define "footer"}} {{ partial "footer" .}} {{end}}
 
 
