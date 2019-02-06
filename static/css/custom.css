@@ -65,6 +65,14 @@ h1, h2 {
 #meet-the-team h2 {
     color: #3d70b2;
 }
+#meet-the-team a {
+    text-decoration: none;
+    color: black;
+}
+#meet-the-team a:hover,
+#meet-the-team a:hover h4 {
+    color: #3d70b2;
+}
 #meet-the-team h2.team-header {
     background: none;
     text-align: center;
@@ -79,6 +87,9 @@ h1, h2 {
     background-color: #E0E0E0;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, .06);
     border-radius: 6px;
+}
+#meet-the-team .item:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, .06);
 }
 .corporate-partners .item {
     padding-top: 20px;
