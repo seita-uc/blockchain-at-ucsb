@@ -40,13 +40,10 @@
 
     <div id="about-us" class="header-section anchor">
         <h2>ABOUT US</h2>
-        <p>Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community.</p>
-
-        <p>Our ecosystem is comprised of a variety of backgrounds: Electrical Engineering and Computer Science, Environmental Studies, Economics, Business, and more.</p>
-
-        <p>Mission Statement: To provide a robust blockchain ecosystem for UC Santa Barbara students and community members that facilitates education, discussion, and networking.</p>
-
-        <p>Vision Statement: Our vision is to expand blockchain awareness among diverse interdisciplinary fields of study to encourage more people to become involved in important blockchain projects.</p>
+        <p class="is-big"><strong>Blockchain at UCSB (BCUCSB)</strong> is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community.</p>
+        <p class="is-big">Our ecosystem is comprised of a variety of backgrounds: Electrical Engineering and Computer Science, Environmental Studies, Economics, Business, and more.</p>
+        <p class="is-big"><strong>Mission Statement:</strong> To provide a robust blockchain ecosystem for UC Santa Barbara students and community members that facilitates education, discussion, and networking.</p>
+        <p class="is-big"><strong>Vision Statement:</strong> Our vision is to expand blockchain awareness among diverse interdisciplinary fields of study to encourage more people to become involved in important blockchain projects.</p>
     </div>
 
     <div id="meet-the-team" class="header-section anchor">
@@ -157,7 +154,7 @@
 
         <div id="contact-us" class="header-section anchor">
             <h2 class="">CONTACT US</h2>
-            <form method="POST" data-netlify="true">
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
 
                 <div class="form-item">
                     <label>Name</label>
@@ -173,7 +170,7 @@
                 </div>
                 <div class="form-item">
                     <label>Message</label>
-                    <textarea rows="6" type="text" name="message"></textarea>
+                    <textarea rows="3" type="text" name="message"></textarea>
                 </div>
 
                 <div class="form-item is-buttons">
@@ -181,9 +178,9 @@
                 </div>
             </form>
         </div>
-
     </div>
-    {{ end }}
-    {{ define "footer"}} {{ partial "footer" .}} {{end}}
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
 
 

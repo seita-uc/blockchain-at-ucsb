@@ -38,18 +38,19 @@ h1, h2 {
 }
 #about-us {
     /*margin-bottom: 60px;*/
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: left;
 }
 #about-us h2 {
     color: #3d70b2;
+    margin-bottom: 30px;
 }
 #about-us p {
     padding: 0 20px;
     padding-top: 10px;
 }
 #meet-the-team {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 #meet-the-team figure,
 #meet-the-team h4,
@@ -96,25 +97,37 @@ h1, h2 {
     margin-top: 30px;
 }
 #events {
-        margin-top: 80px;
+    margin-top: 60px;
 }
 #events h2 {
     color: #3d70b2;
+    margin-bottom: 30px;
 }
+#events .item {
+    padding: 5px 20px;
+}
+
 #contact-us {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 #contact-us h2 {
     color: #3d70b2;
 }
+#contact-us form {
+    margin-top: 30px;
+    padding: 0px 20px;
+}
 #contact-us button {
     background-color: #3d70b2;
 }
-
 div.anchor{
     display: block;
     padding-top: 100px;
     margin-top: -100px;
+}
+.is-big {
+    font-size: 18px;
+    line-height: 29px;
 }
 @media (min-width: 769px) {
     div#background-logo {
