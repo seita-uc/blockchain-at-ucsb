@@ -5,10 +5,6 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2500,
     });
-    if(Kube.Detect.isMobile) {
-        var $nav = $('#nav-toggle');
-        $nav.removeClass('sticky');
-    }
 });
 
 var rellax = new Rellax('.rellax');
