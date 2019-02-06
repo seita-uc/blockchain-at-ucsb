@@ -1,23 +1,39 @@
 h1, h2 {
     font-family: Archivo, Lato, sans-serif !important;
 }
+#top {
+    z-index: 2;
+}
+#background-logo {
+    position: relative;
+}
+.header-section {
+    z-index: 1;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 .header-section>h2 {
     background-color: #dfe3e6;
     padding: 20px;
     padding-left: 20px;
 }
 #what-we-do {
+    display: block;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+#what-we-do-section {
     margin-bottom: 60px;
     text-align: left;
 }
-#what-we-do h2 {
+#what-we-do-section h2 {
     color: #FCC201;
 }
-#what-we-do .row {
+#what-we-do-section .row {
     margin-top: 30px;
     padding: 0 20px;
 } 
-#what-we-do .first {
+#what-we-do-section .first {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
 }
 #about-us {
@@ -86,7 +102,7 @@ div.anchor{
 @media (min-width: 769px) {
     div#background-logo {
         margin-top: 90px;
-        margin-bottom: 90px;
+        margin-bottom: 70px;
     }
     div#hero {
         /*background-color: rgba(255, 255, 255, 0.6);*/

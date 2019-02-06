@@ -3,13 +3,14 @@
 {{ define "main"}}
 
 <div id="main">
-    <div id="background-logo" style="background: rgba(255,255,255,1) url('{{ .Site.Params.banner | absURL }}') no-repeat center center; background-size: contain;">
+    <div class="rellax" data-rellax-speed="-5" data-rellax-zindex="0" id="background-logo" style="background: rgba(255,255,255,1) url('{{ .Site.Params.banner | absURL }}') no-repeat center center; background-size: contain;">
         <div id="hero">
             <!--<h1>{{ .Title }}</h1>-->
             <!--<p>{{ .Site.Params.Description }}</p>-->
         </div>
     </div>
-    <div id="what-we-do" class="header-section anchor">
+    <div id="what-we-do"></div>
+    <div id="what-we-do-section" class="header-section">
         <h2 class="">WHAT WE DO</h2>
         <div class="row gutters first">
             <div class="col col-6 item">

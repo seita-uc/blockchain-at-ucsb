@@ -52,3 +52,5 @@ $(document).ready(function() {
         onBeforePrevSlide: function (el) {}
     });
 });
+
+var rellax = new Rellax('.rellax');
