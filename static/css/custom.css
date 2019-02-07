@@ -154,7 +154,15 @@ h1, h2 {
 #events .item {
     padding: 5px 20px;
 }
-
+#events a {
+    text-decoration: none;
+}
+#events p {
+    color: #313439;
+}
+#events .item:hover h3 {
+    color: #3d70b2;
+}
 #contact-us {
     margin-top: 40px;
 }
