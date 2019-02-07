@@ -75,13 +75,9 @@ h1, h2 {
     color: #5596e6;
     margin-bottom: -10px;
 }
-#meet-the-team div.corporate-partners {
+#meet-the-team div#corporate-partners {
     margin-top: 30px;
     margin-bottom: 20px;
-}
-.corporate-partners .item {
-    margin: 0px 9px;
-
 }
 #meet-the-team .item {
     padding-top: 20px;
@@ -90,8 +86,16 @@ h1, h2 {
     border-radius: 6px;
     overflow: hidden;
 }
+#corporate-partners .item {
+    background-color: white !important;
+    border: solid 1px #f5f5f5;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, .05);
+    /*margin: 0px 9px;*/
+    padding-top: 0px !important;
+    margin: 0 20px 0px 20px;
+}
 #meet-the-team .item:hover {
-    box-shadow: 0px 6px 25px rgba(0, 0, 0, .09);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .07);
 }
 #meet-the-team .item:hover .headshot img {
     -webkit-transform:	scale(1.1);
@@ -115,9 +119,6 @@ h1, h2 {
     height: inherit;
     overflow: hidden;
     background-color: #E0E0E0;
-}
-.row.gutters {
-    padding: 0px 10px;
 }
 .profile p {
     margin-bottom: 0px;
@@ -146,6 +147,39 @@ h1, h2 {
     width: 100%;
     height: auto;
     transition: ease-in-out .2s;
+}
+.coporate-logo {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    /*position: relative;*/
+    z-index: 1;
+    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);*/
+    width: auto;
+    height: 120px;
+    margin: 20px 30px;
+    /*margin-bottom: 0px;*/
+    /*background-color: #E0E0E0;*/
+    text-align: center;
+    vertical-align: middle;
+}
+.coporate-logo img {
+    position: absolute;
+    display: inline;
+    transition: ease-in-out .2s;
+    /*margin: */
+    /*display: block;*/
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    /*width: auto;*/
+    /*height: auto;*/
+}
+#university-partners {
+    margin-bottom: 30px;
 }
 #events h2 {
     color: #3d70b2;
@@ -204,15 +238,15 @@ h1, h2 {
     #about-us .first {
         border-right: 1px dashed rgba(0, 0, 0, 0.15);
     }
-    #meet-the-team .row {
+    #meet-the-team .is-row {
         margin-top: 30px;
-        margin-bottom: 50px;
+        /*margin-bottom: 5px;*/
     }
     .advisors {
         margin-top: 70px;
         margin-bottom: 10px;
     }
-    h3.corporate-partners {
+    h3#corporate-partners {
         margin-top: 80px;
     }
     #events {
@@ -273,14 +307,25 @@ h1, h2 {
     }
 }
 .slick-prev {
-    left: 20px;
+    left: 0px;
     z-index: 3;
 }
+.slick-arrow button:focus {
+    text-decoration: none;
+}
 .slick-next {
-    right: 30px;
+    right: 20px;
 }
 .slick-prev:before, .slick-next:before {
-    font-size: 30px;
+    font-size: 40px;
+    color: #dfe3e6;
+    opacity: 0.75;
+}
+.slick-prev:hover, .slick-next:hover {
+    opacity: 0.9;
+}
+.slick-prev:focus, .slick-next:focus {
+    text-decoration: none;
 }
 .slick-list {
     position: relative;

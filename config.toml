@@ -39,22 +39,36 @@ Paginate = 4
      snsLink = "https://www.linkedin.com/in/melodyroth/"
 
  [[params.executives]]
-     name = "Seita Uchimura"
-     position = "Technology Officer"
-     image = "/img/seita-uchimura.jpg"
-     snsLink = "https://www.facebook.com/seitauchimura"
-
- [[params.executives]]
      name = "Zain Qureshi"
      position = "Marketing Officer"
      image = "/img/zain-qureshi.jpeg"
      snsLink = "https://www.linkedin.com/in/zain-qureshi-338722119/"
 
+ [[params.executives]]
+     name = "Seita Uchimura"
+     position = "Technology Officer"
+     image = "/img/seita-uchimura.jpg"
+     snsLink = "https://www.facebook.com/seitauchimura"
+
  [[params.corporates]]
      name = "MouseBelt University"
-     image = "/img/mousebelt.svg"
+     image = "/img/mousebelt-university.png"
      link = "https://mousebelt.university/"
 
+ [[params.corporates]]
+     name = "Blockchain App Factory"
+     image = "/img/blockchian-app-factory.png"
+     link = "https://www.blockchainappfactory.com/"
+
+ [[params.corporates]]
+     name = "Uphold"
+     image = "/img/uphold.jpg"
+     link = "https://uphold.com/"
+
+ [[params.corporates]]
+     name = "Consensys"
+     image = "/img/consensys.png"
+     link = "https://consensys.net/"
 
 # [[params.executives]]
 #     name = "Cameron Dennis"

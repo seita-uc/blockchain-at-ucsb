@@ -23,25 +23,28 @@
         <h2>MEET THE TEAM</h2>
         <h2 class="team-header">EXECUTIVE TEAM</h2>
         <div class="executive-team">
+        {{ $colNum := 5.0 }}
         {{ range $index, $element := .Site.Params.Executives }}
-            {{ $a := math.Floor (div $index 4) }}
-            {{ $b := mul $a 4 }}
-            {{ $c := math.Round (sub $index $b) }}
-            {{ if eq $c 0.0 }}
-                <div class="row gutters">
+            {{ $divided := math.Floor (div $index $colNum) }}
+            {{ $multiplied := mul $divided $colNum }}
+            {{ $remainder := math.Round (sub $index $multiplied) }}
+            {{ if eq $remainder 0.0 }}
+                <div class="is-row">
                 {{ partial  "exexutive-member-card" $element }}
             {{ else }}
                 {{ partial  "exexutive-member-card" $element }}
             {{ end }}
-            {{ if eq $c 3.0 }} 
+            {{ if eq $remainder (sub $colNum 1) }} 
                 </div>
             {{ end }}
         {{ end }}
+        <div class="is-col is-80">
+        </div>
         </div>
     </div>
 
         <h2 class="team-header advisors">ADVISORS</h2>
-        <h3>University Partners</h3>
+        <h3 id="university-partners">University Partners</h3>
         <!--<div id="light-slider">-->
         <div class="row gutters">
             <div class="col col-4 item">
@@ -64,32 +67,11 @@
             </div>
         </div>
 
-        <h3 class="corporate-partners">Corporate Partners</h3>
-        <div class="slick corporate-partners">
-            <div class="col col-4 item">
-                <!--<figure>-->
-                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
-                <!--</figure>-->
-                <h4>Mousebelt</h4>
-            </div>
-            <div class="col col-4 item">
-                <!--<figure>-->
-                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
-                <!--</figure>-->
-                <h4>BAF</h4>
-            </div>
-            <div class="col col-4 item">
-                <!--<figure>-->
-                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
-                <!--</figure>-->
-                <h4>Uphold</h4>
-            </div>
-            <div class="col col-4 item">
-                <!--<figure>-->
-                <!--<img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">-->
-                <!--</figure>-->
-                <h4>Consensys</h4>
-            </div>
+        <h3 id="corporate-partners">Corporate Partners</h3>
+        <div class="slick" id="corporate-partners">
+        {{ range .Site.Params.Corporates }}
+            {{ partial "corporate-card" . }}
+        {{ end }}
         </div>
         </div>
 
