@@ -69,34 +69,83 @@ h1, h2 {
     text-decoration: none;
     color: black;
 }
-#meet-the-team a:hover,
-#meet-the-team a:hover h4 {
-    color: #3d70b2;
-}
 #meet-the-team h2.team-header {
     background: none;
     text-align: center;
     color: #5596e6;
+    margin-bottom: -10px;
 }
 #meet-the-team div.corporate-partners {
     margin-top: 30px;
     margin-bottom: 20px;
+}
+.corporate-partners .item {
+    margin: 0px 9px;
+
 }
 #meet-the-team .item {
     padding-top: 20px;
     background-color: #E0E0E0;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, .06);
     border-radius: 6px;
+    overflow: hidden;
 }
 #meet-the-team .item:hover {
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, .06);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, .09);
 }
-.corporate-partners .item {
+#meet-the-team .item:hover .headshot img {
+    -webkit-transform:	scale(1.1);
+    transform:		scale(1.1);
+}
+#meet-the-team .item:hover h4,
+#meet-the-team .item:hover a {
+    color: #3d70b2;
+}
+.executive-team {
+    padding: 0px 40px;
+}
+.executive-team .item {
+    padding-top: 0px !important;
+   /*background-color: rgba(255,0,0,0) !important;*/
+}
+.executive-team .profile {
     padding-top: 20px;
+    padding-bottom: 16px;
+    /*margin: 0px 35px;*/
+    height: inherit;
+    overflow: hidden;
     background-color: #E0E0E0;
-    box-shadow: 0 7px 7px -6px rgba(0, 0, 0, .05);
-    margin: 0px 11px;
-    /*box-shadow: 0px 15px 30px rgba(0, 0, 0, 1);*/
+}
+.row.gutters {
+    padding: 0px 10px;
+}
+.profile p {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.profile h4 {
+    margin-top: -3px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.headshot {
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    /*position: relative;*/
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #E0E0E0;
+}
+.headshot img {
+    width: 100%;
+    height: auto;
+    transition: ease-in-out .2s;
 }
 #events h2 {
     color: #3d70b2;

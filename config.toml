@@ -29,25 +29,33 @@ Paginate = 4
 [[params.executives]]
     name = "Cameron Dennis"
     position = "Head of External"
-    image = "/img/cameron-dennis.jpeg"
+    image = "/img/cameron-dennis.jpg"
     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
 
+ [[params.executives]]
+     name = "Melody Roth"
+     position = "Operation Officer"
+     image = "/img/melody-roth.jpeg"
+     snsLink = "https://www.linkedin.com/in/melodyroth/"
 
-# [[params.executives]]
-#     name = "Cameron Dennis"
-#     position = "Marketing Officer"
-#     image = "/#contact-us"
-#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
-# [[params.executives]]
-#     name = "Cameron Dennis"
-#     position = "Technology Officer"
-#     image = "/#contact-us"
-#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
-# [[params.executives]]
-#     name = "Cameron Dennis"
-#     position = "Outreach Officer"
-#     image = "/#contact-us"
-#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+ [[params.executives]]
+     name = "Seita Uchimura"
+     position = "Technology Officer"
+     image = "/img/seita-uchimura.jpg"
+     snsLink = "https://www.facebook.com/seitauchimura"
+
+ [[params.executives]]
+     name = "Zain Qureshi"
+     position = "Marketing Officer"
+     image = "/img/zain-qureshi.jpeg"
+     snsLink = "https://www.linkedin.com/in/zain-qureshi-338722119/"
+
+ [[params.corporates]]
+     name = "MouseBelt University"
+     image = "/img/mousebelt.svg"
+     link = "https://mousebelt.university/"
+
+
 # [[params.executives]]
 #     name = "Cameron Dennis"
 #     position = "Operations Officer"

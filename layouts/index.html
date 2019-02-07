@@ -22,11 +22,23 @@
     <div id="meet-the-team" class="header-section anchor">
         <h2>MEET THE TEAM</h2>
         <h2 class="team-header">EXECUTIVE TEAM</h2>
-        <div class="row gutters">
-            {{ range .Site.Params.Executives }}
-            {{ partial  "exexutive-member-card" . }}
-            {{end}}
+        <div class="executive-team">
+        {{ range $index, $element := .Site.Params.Executives }}
+            {{ $a := math.Floor (div $index 4) }}
+            {{ $b := mul $a 4 }}
+            {{ $c := math.Round (sub $index $b) }}
+            {{ if eq $c 0.0 }}
+                <div class="row gutters">
+                {{ partial  "exexutive-member-card" $element }}
+            {{ else }}
+                {{ partial  "exexutive-member-card" $element }}
+            {{ end }}
+            {{ if eq $c 3.0 }} 
+                </div>
+            {{ end }}
+        {{ end }}
         </div>
+    </div>
 
         <h2 class="team-header advisors">ADVISORS</h2>
         <h3>University Partners</h3>
