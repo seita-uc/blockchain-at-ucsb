@@ -80,7 +80,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 #meet-the-team .item {
-    padding-top: 20px;
+    padding-top: 0px !important;
     background-color: #E0E0E0;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, .06);
     border-radius: 6px;
@@ -108,14 +108,9 @@ h1, h2 {
 .executive-team {
     padding: 0px 40px;
 }
-.executive-team .item {
-    padding-top: 0px !important;
-   /*background-color: rgba(255,0,0,0) !important;*/
-}
-.executive-team .profile {
+.profile {
     padding-top: 20px;
     padding-bottom: 16px;
-    /*margin: 0px 35px;*/
     height: inherit;
     overflow: hidden;
     background-color: #E0E0E0;
@@ -133,7 +128,6 @@ h1, h2 {
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
-    /*position: relative;*/
     z-index: 1;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
     width: 120px;
@@ -152,15 +146,10 @@ h1, h2 {
     position: relative;
     display: block;
     cursor: pointer;
-    overflow: hidden;
-    /*position: relative;*/
     z-index: 1;
-    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);*/
     width: auto;
-    height: 120px;
+    height: 100px;
     margin: 20px 30px;
-    /*margin-bottom: 0px;*/
-    /*background-color: #E0E0E0;*/
     text-align: center;
     vertical-align: middle;
 }
@@ -168,15 +157,14 @@ h1, h2 {
     position: absolute;
     display: inline;
     transition: ease-in-out .2s;
-    /*margin: */
-    /*display: block;*/
     margin-right: -50%;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    /*width: auto;*/
-    /*height: auto;*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    max-height: 100%;
 }
 #university-partners {
     margin-bottom: 30px;
@@ -186,6 +174,7 @@ h1, h2 {
     margin-bottom: 30px;
 }
 #events .item {
+    margin-top: 20px;
     padding: 5px 20px;
 }
 #events a {
@@ -247,7 +236,7 @@ h1, h2 {
         margin-bottom: 10px;
     }
     h3#corporate-partners {
-        margin-top: 80px;
+        margin-top: 100px;
     }
     #events {
         margin-top: 60px;

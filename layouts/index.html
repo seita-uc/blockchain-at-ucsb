@@ -23,67 +23,35 @@
         <h2>MEET THE TEAM</h2>
         <h2 class="team-header">EXECUTIVE TEAM</h2>
         <div class="executive-team">
-        {{ $colNum := 5.0 }}
-        {{ range $index, $element := .Site.Params.Executives }}
-            {{ $divided := math.Floor (div $index $colNum) }}
-            {{ $multiplied := mul $divided $colNum }}
-            {{ $remainder := math.Round (sub $index $multiplied) }}
-            {{ if eq $remainder 0.0 }}
-                <div class="is-row">
-                {{ partial  "exexutive-member-card" $element }}
-            {{ else }}
-                {{ partial  "exexutive-member-card" $element }}
-            {{ end }}
-            {{ if eq $remainder (sub $colNum 1) }} 
-                </div>
-            {{ end }}
-        {{ end }}
-        <div class="is-col is-80">
+            {{ partial "executive-team" . }}
         </div>
-        </div>
-    </div>
 
         <h2 class="team-header advisors">ADVISORS</h2>
         <h3 id="university-partners">University Partners</h3>
-        <!--<div id="light-slider">-->
-        <div class="row gutters">
-            <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Rich Wolski</h4>
-            </div>
-            <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Trinabh Gupta</h4>
-            </div>
-            <div class="col col-4 item">
-                <figure>
-                    <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-                </figure>
-                <h4>Rob Garrett</h4>
-            </div>
+        <div class="is-row">
+            {{ range .Site.Params.Professors }}
+            {{ partial "profile-card" . }}
+            {{ end }}
         </div>
 
         <h3 id="corporate-partners">Corporate Partners</h3>
         <div class="slick" id="corporate-partners">
-        {{ range .Site.Params.Corporates }}
+            {{ range .Site.Params.Corporates }}
             {{ partial "corporate-card" . }}
-        {{ end }}
-        </div>
-        </div>
-
-        <div id="events" class="header-section anchor">
-            {{ partial "events" . }}
-        </div>
-
-        <div id="contact-us" class="header-section anchor">
-            {{ partial "contact-us" . }}
+            {{ end }}
         </div>
     </div>
-</div>
+
+    <div id="events" class="header-section anchor">
+        {{ partial "events" . }}
+    </div>
+
+    <div id="contact-us" class="header-section anchor">
+        {{ partial "contact-us" . }}
+    </div>
+
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fblockchainatucsb%2F&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1081971908611860" width="0" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
 {{ end }}
 {{ define "footer"}} {{ partial "footer" .}} {{end}}
 

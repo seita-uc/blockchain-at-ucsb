@@ -18,57 +18,81 @@ Paginate = 4
     name = "Ruben Dermoyan"
     position = "President"
     image = "/img/ruben-dermoyan.jpeg"
-    snsLink = "https://www.linkedin.com/in/ruben-dermoyan-936aa1166/"
+    link = "https://www.linkedin.com/in/ruben-dermoyan-936aa1166/"
 
 [[params.executives]]
     name = "Mia Winther-Tamaki"
     position = "Vice President"
     image = "/img/mia-winther-tamaki.jpeg"
-    snsLink = "https://www.linkedin.com/in/mia-winther-tamaki-404437170/"
+    link = "https://www.linkedin.com/in/mia-winther-tamaki-404437170/"
 
 [[params.executives]]
     name = "Cameron Dennis"
     position = "Head of External"
     image = "/img/cameron-dennis.jpg"
-    snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
+    link = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
 
  [[params.executives]]
-     name = "Melody Roth"
-     position = "Operation Officer"
-     image = "/img/melody-roth.jpeg"
-     snsLink = "https://www.linkedin.com/in/melodyroth/"
+    name = "Melody Roth"
+    position = "Operation Officer"
+    image = "/img/melody-roth.jpeg"
+    link = "https://www.linkedin.com/in/melodyroth/"
 
  [[params.executives]]
-     name = "Zain Qureshi"
-     position = "Marketing Officer"
-     image = "/img/zain-qureshi.jpeg"
-     snsLink = "https://www.linkedin.com/in/zain-qureshi-338722119/"
+    name = "Zain Qureshi"
+    position = "Marketing Officer"
+    image = "/img/zain-qureshi.jpeg"
+    link = "https://www.linkedin.com/in/zain-qureshi-338722119/"
 
  [[params.executives]]
-     name = "Seita Uchimura"
-     position = "Technology Officer"
-     image = "/img/seita-uchimura.jpg"
-     snsLink = "https://www.facebook.com/seitauchimura"
+    name = "Seita Uchimura"
+    position = "Technology Officer"
+    image = "/img/seita-uchimura.jpg"
+    link = "https://www.facebook.com/seitauchimura"
 
  [[params.corporates]]
-     name = "MouseBelt University"
-     image = "/img/mousebelt-university.png"
-     link = "https://mousebelt.university/"
+    name = "MouseBelt University"
+    image = "/img/mousebelt-university.png"
+    link = "https://mousebelt.university/"
 
  [[params.corporates]]
-     name = "Blockchain App Factory"
-     image = "/img/blockchian-app-factory.png"
-     link = "https://www.blockchainappfactory.com/"
+    name = "Blockchain App Factory"
+    image = "/img/blockchian-app-factory.png"
+    link = "https://www.blockchainappfactory.com/"
 
  [[params.corporates]]
-     name = "Uphold"
-     image = "/img/uphold.jpg"
-     link = "https://uphold.com/"
+    name = "Uphold"
+    image = "/img/uphold.jpg"
+    link = "https://uphold.com/"
 
  [[params.corporates]]
-     name = "Consensys"
-     image = "/img/consensys.png"
-     link = "https://consensys.net/"
+    name = "Consensys"
+    image = "/img/consensys.png"
+    link = "https://consensys.net/"
+
+ [[params.corporates]]
+    name = "shEOS"
+    image = "/img/sheos.png"
+    link = "https://sheos.org/"
+
+ [[params.professors]]
+    name = "Rod Garratt"
+    image = "/img/rod-garratt.jpg"
+    position = "Professor of Economics"
+    link = "https://econ.ucsb.edu/people/faculty/rod-garratt-ph.-d"
+
+ [[params.professors]]
+    name = "Trinabh Gupta"
+    image = "/img/trinabh-gupta.jpg"
+    position = "Assistant Professor of Computer Science"
+    link = "https://www.cs.ucsb.edu/people/faculty/gupta"
+
+ [[params.professors]]
+    name = "Rich Wolski"
+    image = "/img/rich-wolski.jpg"
+    position = "Professor of Computer Science"
+    link = "https://www.cs.ucsb.edu/people/faculty/wolski"
+
 
 # [[params.executives]]
 #     name = "Cameron Dennis"
