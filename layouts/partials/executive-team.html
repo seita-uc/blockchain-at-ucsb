@@ -1,25 +1,56 @@
-{{ $colNum := 5.0 }}
-{{ $lastRemainder := 0.0 }}
-{{ range $index, $element := .Site.Params.Executives }}
-    {{ $divided := math.Floor (div $index $colNum) }}
-    {{ $multiplied := mul $divided $colNum }}
-    {{ $remainder := math.Round (sub $index $multiplied) }}
-    {{ if eq $remainder 0.0 }}
-        <div class="is-row">
-        {{ partial  "profile-card" $element }}
-    {{ else }}
-        {{ partial  "profile-card" $element }}
-    {{ end }}
-    {{ if eq $remainder (sub $colNum 1.0) }} 
-        </div>
-    {{ end }}
-    {{ $lastRemainder = $remainder }}
-{{ end }}
-{{ if ne $lastRemainder (sub $colNum 1.0) }} 
-    {{ $grid := div 100 $colNum }}
-    {{ $necessaryGridNum := sub (sub $colNum 1.0) $lastRemainder }}
-    {{ $offsetGrid := mul $grid $necessaryGridNum }}
-    <div class="is-col is-{{ $offsetGrid }}">
-    </div>
-    </div>
-{{ end }}
+<div class="hide-on-mobile">
+  {{ $colNum := 5.0 }}
+  {{ $lastRemainder := 0.0 }}
+  {{ range $index, $element := .Site.Params.Executives }}
+      {{ $divided := math.Floor (div $index $colNum) }}
+      {{ $multiplied := mul $divided $colNum }}
+      {{ $remainder := math.Round (sub $index $multiplied) }}
+      {{ if eq $remainder 0.0 }}
+          <div class="is-row">
+          {{ partial  "profile-card" $element }}
+      {{ else }}
+          {{ partial  "profile-card" $element }}
+      {{ end }}
+      {{ if eq $remainder (sub $colNum 1.0) }} 
+          </div>
+      {{ end }}
+      {{ $lastRemainder = $remainder }}
+  {{ end }}
+  {{ if ne $lastRemainder (sub $colNum 1.0) }} 
+      {{ $grid := div 100 $colNum }}
+      {{ $necessaryGridNum := sub (sub $colNum 1.0) $lastRemainder }}
+      {{ $offsetGrid := mul $grid $necessaryGridNum }}
+      <div class="is-col is-{{ $offsetGrid }}">
+      </div>
+      </div>
+  {{ end }}
+</div>
+
+<div class="show-on-mobile">
+  {{ $colNum := 2.0 }}
+  {{ $lastRemainder := 0.0 }}
+  {{ range $index, $element := .Site.Params.Executives }}
+      {{ $divided := math.Floor (div $index $colNum) }}
+      {{ $multiplied := mul $divided $colNum }}
+      {{ $remainder := math.Round (sub $index $multiplied) }}
+      {{ if eq $remainder 0.0 }}
+      <div class="is-row is-col-stack-20-mobile">
+          {{ partial  "profile-card" $element }}
+      {{ else }}
+          {{ partial  "profile-card" $element }}
+      {{ end }}
+      {{ if eq $remainder (sub $colNum 1.0) }} 
+          </div>
+      {{ end }}
+      {{ $lastRemainder = $remainder }}
+  {{ end }}
+  {{ if ne $lastRemainder (sub $colNum 1.0) }} 
+      {{ $grid := div 100 $colNum }}
+      {{ $necessaryGridNum := sub (sub $colNum 1.0) $lastRemainder }}
+      {{ $offsetGrid := mul $grid $necessaryGridNum }}
+      <div class="is-col is-50">
+      </div>
+      </div>
+  {{ end }}
+</div>
+

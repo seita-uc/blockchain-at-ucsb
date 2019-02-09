@@ -26,12 +26,14 @@
             {{ partial "executive-team" . }}
         </div>
 
-        <h2 class="team-header advisors">ADVISORS</h2>
-        <h3 id="university-partners">University Partners</h3>
-        <div class="is-row">
-            {{ range .Site.Params.Professors }}
-            {{ partial "profile-card" . }}
-            {{ end }}
+        <h2 class="team-header" id="advisors">ADVISORS</h2>
+        <div id="university-partners">
+            <h3>University Partners</h3>
+            <div class="is-row is-col-stack-20-mobile">
+                {{ range .Site.Params.Professors }}
+                {{ partial "profile-card" . }}
+                {{ end }}
+            </div>
         </div>
 
         <h3 id="corporate-partners">Corporate Partners</h3>

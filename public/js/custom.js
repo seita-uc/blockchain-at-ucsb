@@ -1,18 +1,10 @@
-// When the user scrolls the page, execute myFunction 
-//window.onscroll = function() {myFunction()};
+$(document).ready(function() {
+    $('.slick').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+    });
+});
 
-// Get the header
-var header = document.getElementById("top");
-    header.classList.add("sticky");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+var rellax = new Rellax('.rellax');

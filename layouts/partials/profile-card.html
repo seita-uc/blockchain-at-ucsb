@@ -1,4 +1,4 @@
-<div class="is-col is-20 item">
+<div class="is-col item hide-on-mobile">
     <div class="profile">
         <a href="{{ .link }}">
             <figure class="headshot">
@@ -9,3 +9,16 @@
         </a>
     </div>
 </div>
+
+<div class="is-col item is-50 show-on-mobile">
+    <div class="profile">
+        <a href="{{ .link }}">
+            <figure class="headshot">
+                <img alt="headshot"  src="{{ .image | absURL }}">
+            </figure>
+            <p>{{ .position }}</p>
+            <h4>{{ .name }}</h4>
+        </a>
+    </div>
+</div>
+
