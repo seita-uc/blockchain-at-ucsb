@@ -1,3 +1,4 @@
+const delay = (time) => new Promise((resolve) => setTimeout(() => resolve(), time));
 function getScreenSize() {
     return {
         height: window.parent.screen.height,
@@ -16,6 +17,12 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
+    });
+});
+
+$(window).on("load", function(){
+    delay(500).then(() => {
+        $(".rellax").fadeIn("slow");
     });
 });
 

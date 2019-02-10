@@ -8,7 +8,11 @@ h1, h2 {
 #top {
     z-index: 2;
 }
+#intro:before {
+    display: none;
+}
 #background-logo {
+    /*display: none;*/
     position: relative;
 }
 .header-section {
@@ -210,10 +214,12 @@ h1, h2 {
 }
 @media (min-width: 769px) {
     div#background-logo {
-        margin-top: 90px;
-        margin-bottom: 70px;
+        height: 100%;
+        display: none;
     }
-    div#hero {
+    div#intro {
+        margin-top: 90px;
+        margin-bottom: 50px;
         /*background-color: rgba(255, 255, 255, 0.6);*/
         height: 30em;
     }
@@ -266,11 +272,13 @@ h1, h2 {
     }
 }
 @media (max-width: 768px) {
-    div#hero {
+    div#intro {
         height: 20em;
+        margin-top: 20px;
+        margin-bottom: 70px;
     }
     div#background-logo {
-        margin-bottom: 90px;
+        height: 100%;
     }
     #nav-toggle-box {
         position: relative;
