@@ -28,15 +28,42 @@
         <div id="university-partners">
             <h3>University Partners</h3>
             <div class="is-row is-col-stack-20-mobile">
-                {{ range .Site.Params.Professors }}
-                {{ partial "profile-card" . }}
+                {{ range .Site.Params.Advisors }}
+                <div class="is-col is-25 hide-on-mobile">
+                </div>
+                <div class="is-col is-50 item hide-on-mobile">
+                    <div class="profile">
+                        <a href="{{ .link }}">
+                            <figure class="headshot">
+                                <img alt="headshot"  src="{{ .image | absURL }}">
+                            </figure>
+                            <p>{{ .position }}</p>
+                            <h4>{{ .name }}</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="is-col is-25 hide-on-mobile">
+                </div>
+
+                <div class="is-col item is-50 show-on-mobile">
+                    <div class="profile">
+                        <a href="{{ .link }}">
+                            <figure class="headshot">
+                                <img alt="headshot"  src="{{ .image | absURL }}">
+                            </figure>
+                            <p>{{ .position }}</p>
+                            <h4>{{ .name }}</h4>
+                        </a>
+                    </div>
+                </div>
+                <!--{{ partial "profile-card" . }}-->
                 {{ end }}
             </div>
         </div>
 
-        <h3 id="corporate-partners">Corporate Partners</h3>
+        <h3 id="corporate-partners">Previous Partners</h3>
         <div class="slick" id="corporate-partners">
-            {{ range .Site.Params.Corporates }}
+            {{ range .Site.Params.Partners }}
             {{ partial "corporate-card" . }}
             {{ end }}
         </div>
