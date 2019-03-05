@@ -93,7 +93,11 @@ Paginate = 4
     image = "/img/cameron-dennis.jpg"
     link = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
 
-
+ [[params.advisors]]
+    name = "Ishani Gupta"
+    position = "Co-Founder/Former VP"
+    image = "/img/ishani-gupta.jpeg"
+    link = "https://www.linkedin.com/in/ishaniguptacs/"
 
 # [[params.executives]]
 #     name = "Cameron Dennis"
