@@ -195,6 +195,12 @@ h1, h2 {
 #events .item:hover h3 {
     color: #3d70b2;
 }
+#calender {
+    margin-top: 10px;
+}
+#calender h2 {
+    color: #3d70b2;
+}
 #contact-us {
     margin-top: 40px;
 }

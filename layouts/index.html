@@ -73,11 +73,14 @@
         {{ partial "events" . }}
     </div>
 
+    <div id="calender" class="header-section anchor">
+        <h2>CALENDER</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;mode=WEEK&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ftkur0fvmvggr7q69vn17k9gfo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FLos_Angeles" style="border-width:0; padding: 0px 20px; margin-top: 30px;" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+    </div>
+
     <div id="contact-us" class="header-section anchor">
         {{ partial "contact-us" . }}
     </div>
-
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fblockchainatucsb%2F&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1081971908611860" width="0" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
 {{ end }}
 {{ define "footer"}} {{ partial "footer" .}} {{end}}
