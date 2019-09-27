@@ -1,4 +1,5 @@
-baseURL = "https://www.blockchainatucsb.com/"
+#baseURL = "https://www.blockchainatucsb.com/"
+baseURL = "https://blockchain-at-ucsb-develop.netlify.com/"
 languageCode = "en-us"
 title = "Blockchain at UCSB"
 theme = "kube"
