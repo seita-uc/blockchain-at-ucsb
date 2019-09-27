@@ -3,33 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about-us/</loc>
-  </url>
-  
-  <url>
-    <loc>/contact-us/</loc>
-  </url>
-  
-  <url>
-    <loc>/events/</loc>
-  </url>
-  
-  <url>
-    <loc>/meet-the-team/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+    <loc>https://www.blockchainatucsb.com/about-us/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://www.blockchainatucsb.com/contact-us/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://www.blockchainatucsb.com/events/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.blockchainatucsb.com/meet-the-team/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.blockchainatucsb.com/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.blockchainatucsb.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.blockchainatucsb.com/tags/</loc>
     <priority>0</priority>
   </url>
   

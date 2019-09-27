@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain at UCSB</title>
-    <link>/about-us/</link>
+    <link>https://www.blockchainatucsb.com/about-us/</link>
     <description>Recent content on Blockchain at UCSB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/about-us/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.blockchainatucsb.com/about-us/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
