@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.blockchainatucsb.com/"
 languageCode = "en-us"
 title = "Blockchain at UCSB"
 theme = "kube"
@@ -13,6 +13,8 @@ Paginate = 4
     favicon = "img/blockchain-at-ucsb.png"
     banner = "img/blockchain-at-ucsb-banner.png"
     description = "Blockchain at UCSB (BCUCSB) is a community of students, entrepreneurs, and academics at UC Santa Barbara who have come together to educate and bring awareness about compelling blockchain technology and its applications. We host workshops, speaker events, innovation competitions, and socials to bring blockchain awareness to our local community."
+    googleSpreadSheetId = "1b070PipGZ179G8RiCyXLF8MoYRNXghc3NBBp86G9YXM"
+    images = ["/img/blockchain-at-ucsb.png"]
 
 [[params.executives]]
     name = "Ruben Dermoyan"
@@ -26,45 +28,57 @@ Paginate = 4
     image = "/img/mia-winther-tamaki.jpeg"
     link = "https://www.linkedin.com/in/mia-winther-tamaki-404437170/"
 
- [[params.executives]]
+[[params.executives]]
     name = "Melody Roth"
     position = "Operation Officer"
     image = "/img/melody-roth.jpeg"
     link = "https://www.linkedin.com/in/melodyroth/"
 
- [[params.executives]]
+[[params.executives]]
     name = "Zain Qureshi"
     position = "Marketing Officer"
     image = "/img/zain-qureshi.jpeg"
     link = "https://www.linkedin.com/in/zain-qureshi-338722119/"
 
- [[params.executives]]
+[[params.executives]]
     name = "Seita Uchimura"
     position = "Technology Officer"
     image = "/img/seita-uchimura.jpg"
     link = "https://www.facebook.com/seitauchimura"
 
- [[params.partners]]
+[[params.executives]]
+    name = "Kade Birkhahn"
+    position = "Community Manager"
+    image = "/img/kade-birkhahn.png"
+    link = "https://www.linkedin.com/in/kade-birkhahn-735b1916b/"
+
+[[params.executives]]
+    name = "Manuel Benavides"
+    position = "Outreach Officer"
+    image = "/img/manuel-benavides.jpg"
+    link = "https://www.linkedin.com/in/manuel-benavides-7a9b28181/"
+
+[[params.partners]]
     name = "MouseBelt University"
     image = "/img/mousebelt-university.png"
     link = "https://mousebelt.university/"
 
- [[params.partners]]
+[[params.partners]]
     name = "Blockchain App Factory"
     image = "/img/blockchian-app-factory.png"
     link = "https://www.blockchainappfactory.com/"
 
- [[params.partners]]
+[[params.partners]]
     name = "Uphold"
     image = "/img/uphold.jpg"
     link = "https://uphold.com/"
 
- [[params.partners]]
+[[params.partners]]
     name = "Consensys"
     image = "/img/consensys.png"
     link = "https://consensys.net/"
 
- [[params.partners]]
+[[params.partners]]
     name = "shEOS"
     image = "/img/sheos.png"
     link = "https://sheos.org/"
@@ -87,29 +101,48 @@ Paginate = 4
 #    position = "Professor of Computer Science"
 #    link = "https://www.cs.ucsb.edu/people/faculty/wolski"
 
- [[params.advisors]]
+[[params.advisors]]
     name = "Cameron Dennis"
-    position = "Head of External"
+    position = "Head of External/Co-Founder/Former VP"
     image = "/img/cameron-dennis.jpg"
     link = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
 
- [[params.advisors]]
+[[params.advisors]]
     name = "Ishani Gupta"
     position = "Co-Founder/Former VP"
     image = "/img/ishani-gupta.jpeg"
     link = "https://www.linkedin.com/in/ishaniguptacs/"
 
-# [[params.executives]]
-#     name = "Cameron Dennis"
-#     position = "Operations Officer"
-#     image = "/#contact-us"
-#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
-# [[params.executives]]
-#     name = "Cameron Dennis"
-#     position = "Community Manager"
-#     image = "/#contact-us"
-#     snsLink = "https://www.linkedin.com/in/cameron-dennis-b93b25104/"
-# 
+[[params.advisors]]
+    name = "Sarah Manski"
+    position = "PhD Candidate"
+    image = "/img/sarah-manski.png"
+    link = "https://www.global.ucsb.edu/people/sarah-manski"
+
+[[params.events]]
+    link = "https://innovateucsb.wixsite.com/website"
+    image = "/img/innovation-summit.jpg"
+    title = "Innovation Summit"
+    description = "BCUCSB collaborated with UCSB Innovation Council and other campus organizations to put together a one-day campus event (November 17, 2018) designed to foster and harness creative thinking and develop a innovative business model to improve problems found in global categories such as energy, sustainability, income inequality, digital security, and health."
+
+[[params.events]]
+    link = "https://www.sbhacks.com/"
+    image = "/img/sb-hacks.jpeg"
+    title = "SB Hacks - January 11-13, 2019"
+    description = "BCUCSB partnered with SB Hacks to help coordinate UCSB’s annual hackathons where students spend 36 hours designing an innovative project. At the event, BCUCSB members explained real-world blockchain applications and also encouraged students to explore incorporating blockchain models in their creative business ideas."
+
+[[params.events]]
+    link = "http://communities.techstars.com/usa/goleta/startup-weekend/13331"
+    image = "/img/start-up-weekend.jpeg"
+    title = "Startup Weekend - January 18-21, 2019"
+    description = "BCUCSB helped sponsor Startup Weekend to encourage blockchain adoption in startup ideas."
+
+[[params.events]]
+    link = "https://medium.com/@blockchainatucsb/blockchain-at-ucsb-winter-quarter-wrap-up-ef1575d772d9"
+    image = "/img/blockchain-at-ucsb.png"
+    title = "Blockchain at UCSB Winter Quarter Wrap-up - Medium Article"
+    description = "On January 22nd Blockchain at UCSB celebrated its 1 year anniversary. Every startup has its ups and downs, and starting a new student organization is no exception. Nevertheless we made it this far due to a dedication to our core values, mission and vision."
+
 # [[params.executives]]
 #     name = "Ishani Gupta"
 #     position = ""
@@ -149,9 +182,13 @@ Paginate = 4
     weight = -100
     url = "/#meet-the-team"
 [[menu.main]]
-    name = "EVENTS"
-    weight = -90
-    url = "/#events"
+    name = "ACTIVITIES"
+    weight = -95
+    url = "/#activities"
+# [[menu.main]]
+#     name = "CALENDER"
+#     weight = -90
+#     url = "/#calender"
 [[menu.main]]
     name = "CONTACT US"
     weight = -80

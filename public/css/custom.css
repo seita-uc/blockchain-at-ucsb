@@ -66,9 +66,6 @@ h1, h2 {
 #meet-the-team h2 {
     color: #3d70b2;
 }
-#meet-the-team h2 {
-    color: #3d70b2;
-}
 #meet-the-team a {
     text-decoration: none;
     color: black;
@@ -178,21 +175,76 @@ h1, h2 {
      transform: translate(0,-10px); 
     -webkit-filter: grayscale(0%);
 }
-#events h2 {
-    color: #3d70b2;
-    margin-bottom: 30px;
+
+#activities {
+    margin-top: 50px;
 }
-#events .item {
-    margin-top: 20px;
-    padding: 5px 20px;
-}
-#events a {
-    text-decoration: none;
-}
-#events p {
+#activities p {
     color: #313439;
 }
+#activivies a {
+    text-decoration: none;
+    color: black;
+}
+#activities h2 {
+    color: #3d70b2;
+}
+#activities h2.sub-header {
+    background: none;
+    text-align: center;
+    color: #5596e6;
+    margin-bottom: -10px;
+}
+
+#events.is-row {
+    /*overflow: visible;*/
+    /*margin-left: 0px !important;*/
+    /*width: 120%;*/
+}
+#events .item {
+    overflow:		hidden;
+    background-color: white !important;
+    border: solid 1px #f5f5f5;
+    border-radius: 8px;
+    height: 225px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .03);
+    transition: .5s;
+    margin: 0px 25px 25px 25px;
+}
+#events img {
+    transition: ease-in-out .2s;
+}
+#events .item:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .05);
+}
+#events .item:hover img {
+    -webkit-transform:	scale(1.1);
+    transform:		scale(1.1);
+}
 #events .item:hover h3 {
+    color: #3d70b2;
+}
+#events .eyecatch-wrapper {
+    overflow: hidden;
+    width: 25%;
+    float: left;
+}
+#events .eyecatch {
+    display: block;
+    object-position: 50% -15px;
+    object-fit: cover;
+    height: 250px;
+}
+#events .content {
+    width: 75%;
+    float: right;
+    padding: 20px 20px;
+}
+
+#calender {
+    margin-top: 10px;
+}
+#calender h2 {
     color: #3d70b2;
 }
 #contact-us {
@@ -256,7 +308,7 @@ h1, h2 {
         margin-top: 100px;
     }
     #events {
-        margin-top: 60px;
+        margin-top: 30px;
     }
     div.anchor{
         display: block;
@@ -359,7 +411,17 @@ h1, h2 {
         max-height: 100%;
     }
     #events {
-        margin-top: 90px;
+        margin-top: 30px;
+    }
+    #events .item {
+        height: auto;
+    }
+    #events .eyecatch-wrapper {
+        display: none;
+        width: 0%;
+    }
+    #events .content {
+        width: 100%;
     }
     div.anchor{
         display: block;
